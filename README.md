@@ -7,7 +7,7 @@ This repository contains the analysis code and documentation for a research pape
 
 ## Research Focus
 
-This project examines spatial patterns and variations in symptom onset uncertainty across different geographic regions in Norway for stroke patients, utilizing advanced spatial statistical modeling.
+The main research focus is on how geographic scale, spatial structure, and prior/modeling choices affect inference in CQR-based spatial analysis. To do that this project examines spatial patterns and variations in symptom onset uncertainty across different geographic regions in Norway for stroke patients.
 
 ## Main Tools
 
