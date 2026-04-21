@@ -1,0 +1,21 @@
+# Build output
+build/
+
+# Core LaTeX auxiliary files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+
+# OS/editor clutter
+.DS_Store
+Thumbs.db
