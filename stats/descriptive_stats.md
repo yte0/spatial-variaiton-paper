@@ -288,3 +288,203 @@
 | Helgelandssykehuset HF | 1,294 | 117 | 1,411 | 8.3% |
 | Oslo universitetssykehus HF | 3,420 | 238 | 3,658 | 6.5% |
 | Nordlandssykehuset HF | 2,762 | 105 | 2,867 | 3.7% |
+
+
+## HF vs missing vms
+| HF                                  | VMS not missing | VMS missing | Total | Andel VMS missing | Andel usikker symptomdebut |
+| ----------------------------------- | --------------: | ----------: | ----: | ----------------: | -------------------------: |
+| Lovisenberg Diakonale sykehus AS    |           1,004 |         595 | 1,599 |         **37.2%** |                      21.8% |
+| Helse Førde HF                      |           1,306 |         646 | 1,952 |         **33.1%** |                      24.5% |
+| Sykehuset Østfold HF                |           3,748 |       1,649 | 5,397 |         **30.6%** |                      27.6% |
+| Finnmarkssykehuset HF               |             803 |         349 | 1,152 |         **30.3%** |                      12.5% |
+| Diakonhjemmet sykehus AS            |           1,216 |         464 | 1,680 |         **27.6%** |                      20.4% |
+| Akershus universitetssykehus HF     |           5,896 |       2,136 | 8,032 |         **26.6%** |                      29.0% |
+| Haraldsplass Diakonale sykehus AS   |           1,170 |         417 | 1,587 |         **26.3%** |                      14.7% |
+| Helse Nord-Trøndelag HF             |           2,358 |         826 | 3,184 |         **25.9%** |                      15.0% |
+| Oslo universitetssykehus HF         |           2,738 |         920 | 3,658 |         **25.2%** |                       6.5% |
+| Sørlandet sykehus HF                |           3,666 |       1,184 | 4,850 |         **24.4%** |                      38.2% |
+| Helse Fonna HF                      |           2,023 |         633 | 2,656 |         **23.8%** |                      27.6% |
+| Helse Møre og Romsdal HF            |           3,990 |       1,176 | 5,166 |         **22.8%** |                      26.9% |
+| Sykehuset Innlandet HF              |           5,540 |       1,581 | 7,121 |         **22.2%** |                      14.1% |
+| Universitetssykehuset Nord-Norge HF |           3,642 |       1,029 | 4,671 |         **22.0%** |                      12.8% |
+| Sykehuset i Vestfold HF             |           3,388 |         947 | 4,335 |         **21.8%** |                      16.6% |
+| St. Olavs Hospital HF               |           5,051 |       1,389 | 6,440 |         **21.6%** |                      10.3% |
+| Nordlandssykehuset HF               |           2,256 |         611 | 2,867 |         **21.3%** |                       3.7% |
+| Sykehuset Telemark HF               |           2,440 |         646 | 3,086 |         **20.9%** |                      29.3% |
+| Vestre Viken HF                     |           6,480 |       1,484 | 7,964 |         **18.6%** |                      13.3% |
+| Helgelandssykehuset HF              |           1,150 |         261 | 1,411 |         **18.5%** |                       8.3% |
+| Helse Bergen HF                     |           3,785 |         846 | 4,631 |         **18.3%** |                      15.7% |
+| Helse Stavanger HF                  |           4,065 |         724 | 4,789 |         **15.1%** |                      10.4% |
+
+
+
+## RHF vs missing vms
+| RHF                  | VMS not missing | VMS missing |  Total | Andel VMS missing | Andel usikker symptomdebut |
+| -------------------- | --------------: | ----------: | -----: | ----------------: | -------------------------: |
+| Helse Sør-Øst RHF    |          36,181 |      11,612 | 47,793 |         **24.3%** |                  **21.5%** |
+| Helse Midt-Norge RHF |          11,286 |       3,377 | 14,663 |         **23.0%** |                  **17.2%** |
+| Helse Nord RHF       |           7,867 |       2,242 | 10,109 |         **22.2%** |                   **9.6%** |
+| Helse Vest RHF       |          12,344 |       3,274 | 15,618 |         **21.0%** |                  **17.2%** |
+
+
+| Variable | Level | vms_missing = 0 | vms_missing = 1 | % vms_missing within row | SMD |
+|---|---|---:|---:|---:|---:|
+| n |  | 67,715 | 20,513 | 23.2% |  |
+| Aar (%) | 2014 | 6,758 (10.0) | 1,635 (8.0) | 19.5% | 0.306 |
+|  | 2015 | 6,928 (10.2) | 1,575 (7.7) | 18.5% |  |
+|  | 2016 | 7,021 (10.4) | 1,601 (7.8) | 18.6% |  |
+|  | 2017 | 7,000 (10.3) | 1,763 (8.6) | 20.1% |  |
+|  | 2018 | 7,202 (10.6) | 1,649 (8.0) | 18.6% |  |
+|  | 2019 | 7,417 (11.0) | 1,602 (7.8) | 17.8% |  |
+|  | 2020 | 6,191 (9.1) | 2,742 (13.4) | 30.7% |  |
+|  | 2021 | 6,301 (9.3) | 2,864 (14.0) | 31.2% |  |
+|  | 2022 | 6,296 (9.3) | 2,724 (13.3) | 30.2% |  |
+|  | 2023 | 6,601 (9.7) | 2,358 (11.5) | 26.3% |  |
+| PatientAge, mean (SD) |  | 73.75 (13.08) | 75.43 (12.63) |  | 0.131 |
+| Slagdiagnose (%) | Hjerneblødning | 8,993 (13.3) | 3,005 (14.6) | 25.0% | 0.045 |
+|  | Hjerneinfarkt | 57,938 (85.6) | 17,228 (84.0) | 22.9% |  |
+|  | Uspesifisert | 783 (1.2) | 280 (1.4) | 26.3% |  |
+|  | Ikke besvart | 1 (0.0) | 0 (0.0) | 0.0% |  |
+| SymptomdebutUsikker = 1 (%) |  | 7,947 (11.7) | 8,503 (41.5) | 51.7% | 0.714 |
+| NIHSS_missing = 1 (%) |  | 11,828 (17.5) | 6,953 (33.9) | 37.0% | 0.383 |
+| HvorOppstoHjerneslaget (%) | Utenfor sykehus | 64,210 (94.8) | 15,814 (77.1) | 19.8% | 0.658 |
+|  | Innlagt i sykehus | 3,502 (5.2) | 1,069 (5.2) | 23.4% |  |
+|  | Ikke besvart | 3 (0.0) | 3,630 (17.7) | 99.9% |  |
+| Trombolyse (%) | Ja | 14,608 (21.6) | 509 (2.5) | 3.4% | 0.618 |
+|  | Nei | 52,940 (78.2) | 19,955 (97.3) | 27.4% |  |
+|  | Inklusjon i studie | 88 (0.1) | 0 (0.0) | 0.0% |  |
+|  | Ukjent | 69 (0.1) | 47 (0.2) | 40.5% |  |
+|  | Ikke besvart | 10 (0.0) | 2 (0.0) | 16.7% |  |
+| BoligforholdPre (%) | Egen bolig uten hjemmesykepleie | 51,218 (75.6) | 13,662 (66.6) | 21.1% | 0.203 |
+|  | Egen bolig med hjemmesykepleie | 10,407 (15.4) | 4,442 (21.7) | 29.9% |  |
+|  | Omsorgsbolig med døgnkontinuerlige tjenester | 2,201 (3.3) | 922 (4.5) | 29.5% |  |
+|  | Sykehjem, både korttids- og langtidsopphold | 3,417 (5.0) | 1,268 (6.2) | 27.1% |  |
+|  | Ukjent | 351 (0.5) | 174 (0.8) | 33.1% |  |
+|  | Ikke besvart | 121 (0.2) | 45 (0.2) | 27.1% |  |
+| BosituasjonPre (%) | Bodde sammen med noen | 39,361 (58.1) | 8,884 (43.3) | 18.4% | 0.300 |
+|  | Bodde alene | 23,961 (35.4) | 9,866 (48.1) | 29.2% |  |
+|  | Bodde i institusjon/sykehjem | 2,276 (3.4) | 848 (4.1) | 27.1% |  |
+|  | Ukjent | 483 (0.7) | 207 (1.0) | 30.0% |  |
+|  | Ikke besvart | 1,634 (2.4) | 708 (3.5) | 30.2% |  |
+| SivilstatusPre (%) | Gift/samboende | 39,228 (57.9) | 8,978 (43.8) | 18.6% | 0.289 |
+|  | Enke/enkemann | 13,622 (20.1) | 5,208 (25.4) | 27.7% |  |
+|  | Enslig | 12,475 (18.4) | 5,278 (25.7) | 29.7% |  |
+|  | Ukjent | 2,269 (3.4) | 1,004 (4.9) | 30.7% |  |
+|  | Ikke besvart | 121 (0.2) | 45 (0.2) | 27.1% |  |
+| MRSPre (%) | Ingen symptomer | 36,501 (53.9) | 8,826 (43.0) | 19.5% | 0.232 |
+|  | Ikke betydelig funksjonssvikt | 10,997 (16.2) | 3,623 (17.7) | 24.8% |  |
+|  | Lett funksjonssvikt | 7,276 (10.7) | 2,736 (13.3) | 27.3% |  |
+|  | Moderat funksjonssvikt | 5,504 (8.1) | 2,141 (10.4) | 28.0% |  |
+|  | Alvorlig funksjonssvikt | 2,625 (3.9) | 1,031 (5.0) | 28.2% |  |
+|  | Svært alvorlig funksjonssvikt | 351 (0.5) | 154 (0.8) | 30.5% |  |
+|  | Ikke besvart | 4,461 (6.6) | 2,002 (9.8) | 31.0% |  |
+
+
+# NIHSS missing
+
+| Variable | Level | NIHSS_missing = 0 | NIHSS_missing = 1 | % NIHSS_missing within row | SMD |
+|---|---|---:|---:|---:|---:|
+| n |  | 69,447 | 18,781 | 21.3% |  |
+| Aar (%) | 2014 | 6,260 (9.0) | 2,133 (11.4) | 25.4% | 0.226 |
+|  | 2015 | 6,289 (9.1) | 2,214 (11.8) | 26.0% |  |
+|  | 2016 | 6,351 (9.1) | 2,271 (12.1) | 26.3% |  |
+|  | 2017 | 6,599 (9.5) | 2,164 (11.5) | 24.7% |  |
+|  | 2018 | 7,062 (10.2) | 1,789 (9.5) | 20.2% |  |
+|  | 2019 | 7,205 (10.4) | 1,814 (9.7) | 20.1% |  |
+|  | 2020 | 7,188 (10.4) | 1,745 (9.3) | 19.5% |  |
+|  | 2021 | 7,430 (10.7) | 1,735 (9.2) | 18.9% |  |
+|  | 2022 | 7,460 (10.7) | 1,560 (8.3) | 17.3% |  |
+|  | 2023 | 7,603 (10.9) | 1,356 (7.2) | 15.1% |  |
+| PatientAge, mean (SD) |  | 73.99 (12.90) | 74.67 (13.34) |  | 0.052 |
+| Slagdiagnose (%) | Hjerneblødning | 7,605 (11.0) | 4,393 (23.4) | 36.6% | 0.351 |
+|  | Hjerneinfarkt | 61,158 (88.1) | 14,008 (74.6) | 18.6% |  |
+|  | Uspesifisert | 683 (1.0) | 380 (2.0) | 35.7% |  |
+|  | Ikke besvart | 1 (0.0) | 0 (0.0) | 0.0% |  |
+| SymptomdebutUsikker = 1 (%) |  | 10,835 (15.6) | 5,615 (29.9) | 34.1% | 0.346 |
+| VaaknetMedSymptom (%) | Ja | 12,810 (18.4) | 2,702 (14.4) | 17.4% | 0.416 |
+|  | Nei | 43,077 (62.0) | 9,126 (48.6) | 17.5% |  |
+|  | Ukjent | 8,793 (12.7) | 5,304 (28.2) | 37.6% |  |
+|  | Ikke besvart | 4,767 (6.9) | 1,649 (8.8) | 25.7% |  |
+| HvorOppstoHjerneslaget (%) | Utenfor sykehus | 64,220 (92.5) | 15,804 (84.1) | 19.7% | 0.279 |
+|  | Innlagt i sykehus | 2,617 (3.8) | 1,954 (10.4) | 42.7% |  |
+|  | Ikke besvart | 2,610 (3.8) | 1,023 (5.4) | 28.2% |  |
+| Trombolyse (%) | Ja | 14,774 (21.3) | 343 (1.8) | 2.3% | 0.642 |
+|  | Nei | 54,506 (78.5) | 18,389 (97.9) | 25.2% |  |
+|  | Inklusjon i studie | 87 (0.1) | 1 (0.0) | 1.1% |  |
+|  | Ukjent | 70 (0.1) | 46 (0.2) | 39.7% |  |
+|  | Ikke besvart | 10 (0.0) | 2 (0.0) | 16.7% |  |
+| BoligforholdPre (%) | Egen bolig uten hjemmesykepleie | 52,799 (76.0) | 12,081 (64.3) | 18.6% | 0.296 |
+|  | Egen bolig med hjemmesykepleie | 11,025 (15.9) | 3,824 (20.4) | 25.8% |  |
+|  | Omsorgsbolig med døgnkontinuerlige tjenester | 2,199 (3.2) | 924 (4.9) | 29.6% |  |
+|  | Sykehjem, både korttids- og langtidsopphold | 3,121 (4.5) | 1,564 (8.3) | 33.4% |  |
+|  | Ukjent | 303 (0.4) | 222 (1.2) | 42.3% |  |
+|  | Ikke besvart | 0 (0.0) | 166 (0.9) | 100.0% |  |
+| BosituasjonPre (%) | Bodde sammen med noen | 39,053 (56.2) | 9,192 (48.9) | 19.1% | 0.223 |
+|  | Bodde alene | 26,396 (38.0) | 7,431 (39.6) | 22.0% |  |
+|  | Bodde i institusjon/sykehjem | 1,983 (2.9) | 1,141 (6.1) | 36.5% |  |
+|  | Ukjent | 450 (0.6) | 240 (1.3) | 34.8% |  |
+|  | Ikke besvart | 1,565 (2.3) | 777 (4.1) | 33.2% |  |
+| SivilstatusPre (%) | Gift/samboende | 38,993 (56.1) | 9,213 (49.1) | 19.1% | 0.202 |
+|  | Enke/enkemann | 14,513 (20.9) | 4,315 (23.0) | 22.9% |  |
+|  | Enslig | 13,650 (19.7) | 4,103 (21.8) | 23.1% |  |
+|  | Ukjent | 2,289 (3.3) | 984 (5.2) | 30.1% |  |
+|  | Ikke besvart | 0 (0.0) | 166 (0.9) | 100.0% |  |
+| MRSPre (%) | Ingen symptomer | 37,656 (54.2) | 7,671 (40.8) | 16.9% | 0.362 |
+|  | Ikke betydelig funksjonssvikt | 11,565 (16.7) | 3,055 (16.3) | 20.9% |  |
+|  | Lett funksjonssvikt | 7,725 (11.1) | 2,287 (12.2) | 22.8% |  |
+|  | Moderat funksjonssvikt | 5,788 (8.3) | 1,857 (9.9) | 24.3% |  |
+|  | Alvorlig funksjonssvikt | 2,527 (3.6) | 1,129 (6.0) | 30.9% |  |
+|  | Svært alvorlig funksjonssvikt | 315 (0.5) | 190 (1.0) | 37.6% |  |
+|  | Ikke besvart | 3,871 (5.6) | 2,592 (13.8) | 40.1% |  |
+| vms_missing = 1 (%) |  | 13,560 (19.5) | 6,953 (37.0) | 33.9% | 0.396 |
+
+
+### HF vs NIHSS missing
+
+| HF | NIHSS_missing = 0 | NIHSS_missing = 1 | Total | % NIHSS_missing | % vms_missing | % uncertain symptom onset |
+|---|---:|---:|---:|---:|---:|---:|
+| Sykehuset Østfold HF | 3,018 | 2,379 | 5,397 | 44.1% | 30.6% | 27.6% |
+| Helse Førde HF | 1,093 | 859 | 1,952 | 44.0% | 33.1% | 24.5% |
+| Helse Nord-Trøndelag HF | 2,091 | 1,093 | 3,184 | 34.3% | 25.9% | 15.0% |
+| Universitetssykehuset Nord-Norge HF | 3,235 | 1,436 | 4,671 | 30.7% | 22.0% | 12.8% |
+| Finnmarkssykehuset HF | 848 | 304 | 1,152 | 26.4% | 30.3% | 12.5% |
+| Lovisenberg Diakonale sykehus AS | 1,209 | 390 | 1,599 | 24.4% | 37.2% | 21.8% |
+| Nordlandssykehuset HF | 2,172 | 695 | 2,867 | 24.2% | 21.3% | 3.7% |
+| Sykehuset Innlandet HF | 5,431 | 1,690 | 7,121 | 23.7% | 22.2% | 14.1% |
+| Sykehuset i Vestfold HF | 3,332 | 1,003 | 4,335 | 23.1% | 21.8% | 16.6% |
+| Helse Møre og Romsdal HF | 4,033 | 1,133 | 5,166 | 21.9% | 22.8% | 26.9% |
+| Helgelandssykehuset HF | 1,122 | 289 | 1,411 | 20.5% | 18.5% | 8.3% |
+| Akershus universitetssykehus HF | 6,518 | 1,514 | 8,032 | 18.8% | 26.6% | 29.0% |
+| Sørlandet sykehus HF | 3,941 | 909 | 4,850 | 18.7% | 24.4% | 38.2% |
+| Diakonhjemmet sykehus AS | 1,397 | 283 | 1,680 | 16.8% | 27.6% | 20.4% |
+| Vestre Viken HF | 6,639 | 1,325 | 7,964 | 16.6% | 18.6% | 13.3% |
+| Helse Fonna HF | 2,218 | 438 | 2,656 | 16.5% | 23.8% | 27.6% |
+| Oslo universitetssykehus HF | 3,056 | 602 | 3,658 | 16.5% | 25.2% | 6.5% |
+| Helse Stavanger HF | 4,103 | 686 | 4,789 | 14.3% | 15.1% | 10.4% |
+| Haraldsplass Diakonale sykehus AS | 1,360 | 227 | 1,587 | 14.3% | 26.3% | 14.7% |
+| St. Olavs Hospital HF | 5,556 | 884 | 6,440 | 13.7% | 21.6% | 10.3% |
+| Sykehuset Telemark HF | 2,788 | 298 | 3,086 | 9.7% | 20.9% | 29.3% |
+| Helse Bergen HF | 4,287 | 344 | 4,631 | 7.4% | 18.3% | 15.7% |
+
+
+# reg model
+
+| Model | Predictor | Log-odds β | 95% CrI | OR | OR 95% CrI | 
+|---|---|---:|---:|---:|---:|
+| Model 1 | Intercept | -1.688 | -1.709 to -1.668 | 0.18 | 0.18 to 0.19 | 
+| Model 1 | NIHSS_missing | 0.836 | 0.799 to 0.873 | 2.31 | 2.22 to 2.39 |
+| Model 2 | Intercept | -2.018 | -2.041 to -1.994 | 0.13 | 0.13 to 0.14 | 
+| Model 2 | vms_missing | 1.672 | 1.636 to 1.709 | 5.32 | 5.13 to 5.52 | 
+| Model 3 | Intercept | -2.203 | -2.231 to -2.176 | 0.11 | 0.11 to 0.11 |
+| Model 3 | vms_missing | 1.753 | 1.708 to 1.797 | 5.77 | 5.52 to 6.03 | 
+| Model 3 | NIHSS_missing | 0.829 | 0.777 to 0.882 | 2.29 | 2.17 to 2.42 | 
+| Model 3 | NIHSS_missing × vms_missing | -0.523 | -0.602 to -0.444 | 0.59 | 0.55 to 0.64 |
+
+# maps
+
+
+![](./img/map_muni_NIHSS_missing.png)
+
+![](./img/map_muni_vms_missing.png)
+
+![](./img/map_muni_usd.png)
