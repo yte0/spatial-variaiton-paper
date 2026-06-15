@@ -1,5 +1,7 @@
 # Build output
-build/
+build/*
+main.bbl-SAVE-ERROR
+!build/main.pdf
 
 # Core LaTeX auxiliary files
 *.aux
