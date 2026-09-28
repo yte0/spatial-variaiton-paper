@@ -1,4 +1,9 @@
-\documentclass[11pt]{article}
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[
+  a4paper,
+  margin=2.5cm
+]{geometry}
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -6,6 +11,9 @@
 \usepackage{amsmath, amssymb}
 \usepackage{graphicx}
 \usepackage{hyperref}
+
+\usepackage{threeparttable}
+\usepackage{tabularx}
 
 \usepackage{booktabs}
 \usepackage{longtable}
@@ -23,7 +31,7 @@
 \maketitle
 
 \begin{abstract}
-\input{sections/abstract}
+  \input{sections/abstract}
 \end{abstract}
 
 \input{sections/intro}
@@ -31,8 +39,6 @@
 \input{sections/results}
 \input{sections/discussion}
 \input{sections/sup}
-
-
 
 \printbibliography{}
 \end{document}

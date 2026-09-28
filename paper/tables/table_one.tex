@@ -1,103 +1,85 @@
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
 
+\begin{table}[htbp]
+  \caption{Characteristics of patients}
+  \label{tab:baseline}
+  \small
+  \begin{threeparttable}
 
+    \begin{tabularx}{\textwidth}{@{}Xccc@{}}
+      \toprule
+                                         &
+      \textbf{Uncertain onset}           &
+      \textbf{Other stroke}              &
+      \textbf{SMD}                                                               \\
+                                         &
+      \textbf{(n = 12,612)}              &
+      \textbf{(n = 55,233)}              &                                       \\
+      \midrule
+      Age, mean (SD)
+                                         & 73.89 (13.4)  & 73.31 (13.4)  & 0.043 \\
 
-\begin{small}
-\setlength{\tabcolsep}{3pt}
-\begin{longtable}{@{}L{0.60\textwidth}R{0.14\textwidth}R{0.14\textwidth}R{0.06\textwidth}@{}}
-\caption{Baseline characteristics}\label{tab:baseline-characteristics}\\
-\toprule
-& UOS $(n=12\,870)$ & KOS $(n=55\,013)$ & SMD \\
-\midrule
-\endfirsthead
+      Female                             & 5,945 (47.1)  & 25,337 (45.9) & 0.025 \\
 
-\toprule
- & UOS $(n=12\,870)$ & KOS $(n=55\,013)$ & SMD \\
-\midrule
-\endhead
+      Stroke type, Infarction            & 10,813 (85.7) & 47,360 (85.7) & 0.009 \\
 
-\midrule
-\multicolumn{4}{r}{\emph{Continued on next page}}\\
-\endfoot
+      Previous TIA                       & 880 (7.0)     & 4,356 (7.9)   & 0.043 \\
 
-\bottomrule
-\endlastfoot
+      Previous MI                        & 1,482 (11.8)  & 6,816 (12.3)  & 0.020 \\
 
-PatientAge (mean(SD)) & 74.61 (12.88) & 74.03 (13.12) & 0.045 \\
-Slagdiagnose (\%) & & & \\
-\quad Hjerneblødning & 1882 (14.6) & 8045 (14.6) & 0.026 \\
-\quad Hjerneinfarkt & 10811 (84.0) & 46365 (84.3) &  \\
-\quad Uspesifisert & 177 (1.4) & 602 (1.1) &  \\
-Trombolyse (\%) & & & \\
-\quad ja & 103 (0.8) & 12744 (23.2) & 0.736 \\
-BoligforholdPre (\%) & & & \\
-\quad EB uten hsp & 8987 (69.8) & 40807 (74.2) & 0.130 \\
-\quad EB med hsp & 2599 (20.2) & 8797 (16.0) &  \\
-\quad Omsorgsbolig m. døgnkont. tj. & 494 (3.8) & 1955 (3.6) &  \\
-\quad Sykehjem & 652 (5.1) & 3063 (5.6) &  \\
-BosituasjonPre (\%) & & & \\
-\quad bodde sammen med noen & 5926 (46.0) & 30675 (55.8) & 0.208 \\
-\quad bodde alene & 5974 (46.4) & 20431 (37.1) &  \\
-\quad bodde i institusjon/sykehjem & 524 (4.1) & 1934 (3.5) &  \\
-SivilstatusPre (\%) & & & \\
-\quad gift/samboende & 5945 (46.2) & 30659 (55.7) & 0.201 \\
-\quad enke/ enkemann & 3086 (24.0) & 11540 (21.0) &  \\
-\quad enslig & 3163 (24.6) & 10716 (19.5) &  \\
-MRSPre (\%) & & & \\
-\quad Ingen symptomer & 6201 (48.2) & 28847 (52.4) & 0.115 \\
-\quad Ikke betydelig funksjonssvikt & 2003 (15.6) & 9031 (16.4) &  \\
-\quad Lett funksjonssvikt & 1634 (12.7) & 6002 (10.9) &  \\
-\quad Moderat funksjonssvikt & 1216 (9.4) & 4671 (8.5) &  \\
-\quad Alvorlig funksjonssvikt & 569 (4.4) & 2286 (4.2) &  \\
-\quad Svært alvorlig funksjonssvikt & 78 (0.6) & 317 (0.6) &  \\
-\quad ikke besvart & 1169 (9.1) & 3859 (7.0) &  \\
-TidlHjerneslag (\%) & & & \\
-\quad ja & 2908 (22.6) & 12269 (22.3) & 0.048 \\
-TidlTIA (\%) & & & \\
-\quad ja & 1104 (8.6) & 5348 (9.7) & 0.064 \\
-TidlHjerteinfarkt (\%) & & & \\
-\quad ja & 1622 (12.6) & 7186 (13.1) & 0.034 \\
-Atrieflimmer (\%) & & & \\
-\quad ja & 3201 (24.9) & 13713 (24.9) & 0.028 \\
-RoeykerPre (\%) & & & \\
-\quad aldri & 4619 (35.9) & 20649 (37.5) & 0.091 \\
-\quad røyker & 2643 (20.5) & 9767 (17.8) &  \\
-\quad eks-røyker & 3119 (24.2) & 14574 (26.5) &  \\
-PreDiabetes (\%) & & & \\
-\quad ja & 2742 (21.3) & 9875 (18.0) & 0.091 \\
-Bevissthetsgrad pre (\%) & & & \\
-\quad våken & 10976 (85.3) & 46896 (85.2) & 0.092 \\
-\quad Døsig, reagerer adekvat ved lett stimulering & 837 (6.5) & 4197 (7.6) &  \\
-\quad Døsig, reagerer først ved kraftigere/gjentatt stimulering & 389 (3.0) & 1661 (3.0) &  \\
-\quad Reagerer ikke, eller bare med ikke-målrettet bevegelse & 481 (3.7) & 1801 (3.3) &  \\
-\quad ukjent & 172 (1.3) & 335 (0.6) &  \\
-PreASA (\%) & & & \\
-\quad ja & 3816 (29.7) & 16969 (30.8) & 0.044 \\
-PreKlopidogrel (\%) & & & \\
-\quad ja & 767 (6.0) & 3503 (6.4) & 0.044 \\
-PreDipyridamol (\%) & & & \\
-\quad ja & 479 (3.7) & 2409 (4.4) & 0.051 \\
-PreWarfarin (\%) & & & \\
-\quad ja & 752 (5.8) & 2719 (4.9) & 0.058 \\
-PreAndreEnnWarfarin (\%) & & & \\
-\quad ja & 1370 (10.6) & 5964 (10.8) & 0.041 \\
-PreMedHoeytBT (\%) & & & \\
-\quad ja & 7098 (55.2) & 29909 (54.4) & 0.047 \\
-PreStatinerLipid (\%) & & & \\
-\quad ja & 4541 (35.3) & 20081 (36.5) & 0.053 \\
-utd\_nivaa\_3d (\%) & & & \\
-\quad 0 & 69 (0.5) & 196 (0.4) & 0.079 \\
-\quad 1 & 4352 (34.1) & 17150 (31.4) &  \\
-\quad 2 & 5966 (46.7) & 25704 (47.1) &  \\
-\quad 3 & 2354 (18.4) & 11439 (21.0) &  \\
-innt4d\_samlet (\%) & & & \\
-\quad 1 & 3449 (26.8) & 13571 (24.7) & 0.086 \\
-\quad 2 & 3345 (26.0) & 13514 (24.6) &  \\
-\quad 3 & 3142 (24.4) & 13628 (24.8) &  \\
-\quad 4 & 2883 (22.4) & 14137 (25.7) &  \\
+      Atrial fibrillation                & 2,917 (23.1)  & 13,119 (23.8) & 0.015 \\
 
-\end{longtable}
-\end{small}
+      Diabetes                           & 2,438 (19.3)  & 9,234 (16.7)  & 0.069 \\
 
+      Antihypertensive medication        & 6,508 (51.6)  & 28,464 (51.5) & 0.040 \\
 
+      Lipid-lowering medication          & 3,700 (29.3)  & 16,821 (30.5) & 0.050 \\
+
+      Thrombolysis                       & 161 (1.3)     & 12,148 (22.0) & 0.685 \\
+
+      Smoking status                     &               &               & 0.086 \\ \quad Never smoker & 4,673 (37.1)        & 20,966 (38.0)
+                                         &                                       \\ \quad Current smoker & 2,717 (21.5) & 10,234 (18.5) & \\ \quad Former
+      smoker                             & 2,998 (23.8)  & 14,538 (26.3) &       \\ \quad Unknown & 2,224 (17.6)        & 9,495
+      (17.2)                             &                                       \\
+
+      Level of Consciousness (admission) &               &               & 0.087 \\ \quad Alert   & 10,856 (86.1)       &
+      47,236 (85.5)                      &                                       \\ \quad Mildly Drowsy & 800 (6.3) & 4,283 (7.8) & \\ \quad
+      Markedly Drowsy                    & 349 (2.8)     & 1,617 (2.9)   &       \\ \quad Unresponsive & 432 (3.4)           &
+      1,699 (3.1)                        &                                       \\ \quad Unknown & 175 (1.4) & 398 (0.7) & \\
+
+      Pre-stroke modified Rankin Scale   &               &               & 0.098 \\ \quad No symptoms & 6,884
+      (54.6)                             & 31,923 (57.8) &                       \\ \quad No significant disability & 1,927 (15.3)        &
+      8,805 (15.9)                       &                                       \\ \quad Slight disability & 1,369 (10.9) & 5,319 (9.6) & \\
+      \quad Moderate disability          & 931 (7.4)     & 3,829 (6.9)   &       \\ \quad Moderately
+      severe disability                  & 385 (3.1)     & 1,612 (2.9)   &       \\ \quad Severe disability & 54
+      (0.4)                              & 227 (0.4)     &                       \\ \quad Unknown & 1,062 (8.4) & 3,518 (6.4) & \\
+
+      Living situation                   &               &               & 0.173 \\ \quad Living with others & 6,192 (49.1)        &
+      31,614 (57.2)                      &                                       \\ \quad Living alone & 5,701 (45.2) & 20,548 (37.2) & \\ \quad
+      Institution/nursing home           & 376 (3.0)     & 1,490 (2.7)   &       \\ \quad Unknown & 333
+      (2.8)                              & 1,581 (2.8)   &                       \\
+
+      Education                          &               &               & 0.055 \\ \quad No education & 60 (0.5) & 203 (0.4) & \\ \quad
+      Compulsory education               & 4,150 (33.2)  & 17,149 (31.3) &       \\ \quad Upper-secondary
+      education                          & 5,868 (46.9)  & 25,743 (47.0) &       \\ \quad Higher education & 2,419
+      (19.3)                             & 11,606 (21.2) &                       \\ \quad Unknown & 15 (0.1) & 60 (0.1) & \\
+
+      Household income                   &               &               & 0.068 \\ \quad Low & 3,325 (26.4) & 13,437 (24.3) & \\
+      \quad M. low                       & 3,138 (24.9)  & 13,278 (24.0) &       \\ \quad M. high & 3,009 (23.9)       &
+      13,470 (24.4)                      &                                       \\ \quad High & 3,092 (24.5) & 14,885 (26.9) & \\ \quad Unknown
+                                         & 48 (0.4)      & 163 (0.3)     &       \\
+
+      \bottomrule
+    \end{tabularx}
+
+    \begin{tablenotes}
+      \footnotesize
+      \item
+      SMD = standardized mean difference;
+      SD = standard deviation;
+      TIA = transient ischaemic attack.
+    \end{tablenotes}
+
+  \end{threeparttable}
+\end{table}
