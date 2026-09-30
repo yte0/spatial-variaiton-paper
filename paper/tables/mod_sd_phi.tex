@@ -1,0 +1,40 @@
+\begin{table}[htbp]
+  \caption{Comparison of spatial models for uncertain-onset stroke}
+  \label{tab:spatial_models}
+  \small
+  \begin{threeparttable}
+
+    \begin{tabularx}{\textwidth}{@{}Xcccc@{}}
+      \toprule
+      \textbf{Model}      &
+      \textbf{Spatial SD} &
+      \textbf{95\% CrI}   &
+      \boldmath$\phi$     &
+      \textbf{DIC / WAIC}                                                      \\
+      \midrule
+
+      Unadjusted          & 0.696 & 0.614--0.781 & 0.976 & 61088.99 / 61089.08 \\
+
+      Sociodemographic    & 0.697 & 0.616--0.783 & 0.976 & 60753.25 / 60752.12 \\
+
+      Clinical            & 0.700 & 0.618--0.786 & 0.975 & 60780.37 / 60782.12 \\
+
+      Missingness         & 0.775 & 0.683--0.871 & 0.969 & 54270.76 / 54269.53 \\
+
+      Health trust        & 0.518 & 0.444--0.595 & 0.970 & 60710.35 / 60710.54 \\
+
+      Full model          & 0.612 & 0.529--0.670 & 0.969 & 53638.95 / 53640.24 \\
+
+      \bottomrule
+    \end{tabularx}
+
+    \begin{tablenotes}
+      \footnotesize
+      \item Spatial SD - the posterior standard deviation of the spatial effect. DIC =
+      deviance information criterion; WAIC = Watanabe-Akaike information criterion.
+      $\phi$ - the proportion of spatial variance attributed to the structured
+      component.
+    \end{tablenotes}
+
+  \end{threeparttable}
+\end{table}
