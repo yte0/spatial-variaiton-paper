@@ -13,7 +13,7 @@ history were modest. Living alone was more common among patients with
 uncertain-onset stroke (45.2\% vs 37.2\%), and they recieved thrombolysis less
 frequently (1.3\% vs 22.0\%).
 
-\subsection*{Temporal and geographic variation in uncertain-onset stroke}
+\subsection*{Crude temporal and geographic variation in uncertain-onset stroke}
 
 The crude proportion of uncertain-onset stroke varied over time, with the
 heigest proportion in 2014 (27.9\%) and the lowest in 2020 (14.0\%). The
@@ -36,19 +36,81 @@ uncertain-onset stroke was observed across municipalities, ranging from 0\% to
 appeared to cluster together geographically rather than an even distribution
 across the country.
 
+\subsection*{Patient and provider factors and geographic variation}
+
+The base model only included year and municipality-level spatial effects. The
+municipality-level effects displayed a similar geographic pattern as the crude
+analysis, with the municipality-level estimates smoothed towards the mean
+(Figure \ref{fig:adjusted_maps}A). The temporal pattern was also similar to the
+crude analysis, with the odds of uncertain-onset stroke being lower in all
+years compared to 2014 (supplementary table). The standard deviation of the
+municipality effect of teh base model was 0.696 (95\% CrI 0.614--0.781), and
+the spatial mixing parameter \(\phi\) was 0.976 (95\% CrI 0.969--0.982),
+indicating that most of the geographic variation was spatially structured
+(table \ref{tab:spatial_models}).
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.85\textwidth]{figures/fig_3.png}
+  \caption{Geographic variation showen as the municipality-level estimates of uncertain-onset stroke as log-odds. A)
+    Base model. B) Adjused for sociodemographic characteristics. C) Adjused for Clinical characteristics. D) Missingness of Wake-up status E) health trust.
+    F) Full model.}
+  \label{fig:adjusted_maps}
+\end{figure}
+
+The municipality level estimates were practically unchanged when adjusted for
+the patient-related sociodemographic and clinical characteristics. Compared to
+the base model, the municipality level log-odds estimes changed with median of
+0.00 (IQR -0.02 - 0.02) for the sociodemographic model and -0.01 (IQR -0.03 -
+0.03) for the clinical model (figure \ref{fig:adjusted_maps}B-C). Adjustment
+for missing wake-up status produced a wider distribution of changes (median
+-0.01, IQR -0.08 - 0.08) (figure \ref{fig:adjusted_maps}D). In contrast to the
+minimal visual changes seen after sociodemographic, clinical and missingness
+adjustment, the health trust (-0.08 median, IQR -0.48 - 0.48) and full models
+(-0.06 median, IQR -0.51 - 0.49) produced noticable change in the the sptial
+pattern (figure \ref{fig:adjusted_maps} E-F).
+
+Changes in the municipality-level variation were reflected in the posterior
+standard deviation (SD) of the spatial effect. Compared to the base model (SD
+0.696), the posterior standard deviation of the municipality effect of the
+sociodemographic (SD 0.697) and clinical models (SD 0.697) were unchanged.
+While higher spatial sd was observed for the missingness model (SD 0.775),
+lower spatial SD was obtained for the health trust model (SD 0.518) and full
+models (SD 0.612). The spatial mixing parameter remained high and largely
+unchanged across models, ranging from 0.969 to 0.976, indicating that the
+residual municipality-level variation remained predominantly spatially
+structured (table \ref{tab:spatial_models}).
+
+\input{tables/mod_sd_phi.tex}
+
+The DIC and WAIC were lower for all models compared to the base model
+indicating improved model fit. The additoin of patietn-related factors improved
+the model fit without substantially altering the spatial pattern. Among the
+individuall adjustment models, the largest reduction was observed for the
+missingness model (DIC 54270.76, WAIC 54269.53), accompanied with increase in
+the municipallity level sd. Inclusion of health trust produced a smaller
+improvement in model fit (DIC, 60,710.35; WAIC, 60,710.54) but was accompanied
+by a marked reduction in spatial variation. The full model which included all
+patient and provider factors had the lowest DIC (53,638.95) and WAIC
+(53,640.24).
+
+\subsubsection*{Geographic variaiton over time}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.5\textwidth]{figures/fitted_pre_post_2018.png}
+  \caption{Geographic variation}
+  \label{fig:preandposttreatmentpathways}
+\end{figure}
+
+
+\newpage
+
 \input{tables/main_mod_result.tex}
 
 \newpage
 
-\input{tables/mod_sd_phi.tex}
-
 \newpage
-
-\begin{figure}[ht]
-  \centering
-  \includegraphics[width=0.60\textwidth]{figures/fig_3.png}
-\end{figure}
-
 
 \newpage
 
